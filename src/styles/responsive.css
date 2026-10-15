@@ -1,0 +1,166 @@
+/* =========================================
+   RESPONSIVE GRID & BREAKPOINTS
+   ========================================= */
+
+/* ================= 1. THE 12-COLUMN GRID ================= */
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px; /* Default gap, can be overridden with your gap-* utilities */
+  width: 100%;
+}
+
+/* Base Columns (Mobile First - applies to all screen sizes unless overridden) */
+.col-1 {
+  grid-column: span 1;
+}
+.col-2 {
+  grid-column: span 2;
+}
+.col-3 {
+  grid-column: span 3;
+}
+.col-4 {
+  grid-column: span 4;
+}
+.col-5 {
+  grid-column: span 5;
+}
+.col-6 {
+  grid-column: span 6;
+}
+.col-7 {
+  grid-column: span 7;
+}
+.col-8 {
+  grid-column: span 8;
+}
+.col-9 {
+  grid-column: span 9;
+}
+.col-10 {
+  grid-column: span 10;
+}
+.col-11 {
+  grid-column: span 11;
+}
+.col-12 {
+  grid-column: span 12;
+}
+
+/* ================= 2. RESPONSIVE DISPLAY UTILITIES ================= */
+
+/* Hide/Show classes for mobile (Default) */
+.d-none {
+  display: none !important;
+}
+.d-block {
+  display: block !important;
+}
+.d-flex {
+  display: flex !important;
+}
+
+/* ================= 3. TABLET & SMALL DESKTOP (768px and up) ================= */
+@media (min-width: 768px) {
+  /* Display Toggles */
+  .d-md-none {
+    display: none !important;
+  }
+  .d-md-block {
+    display: block !important;
+  }
+  .d-md-flex {
+    display: flex !important;
+  }
+
+  /* Responsive Grid Columns */
+  .col-md-1 {
+    grid-column: span 1;
+  }
+  .col-md-2 {
+    grid-column: span 2;
+  }
+  .col-md-3 {
+    grid-column: span 3;
+  }
+  .col-md-4 {
+    grid-column: span 4;
+  }
+  .col-md-5 {
+    grid-column: span 5;
+  }
+  .col-md-6 {
+    grid-column: span 6;
+  }
+  .col-md-7 {
+    grid-column: span 7;
+  }
+  .col-md-8 {
+    grid-column: span 8;
+  }
+  .col-md-9 {
+    grid-column: span 9;
+  }
+  .col-md-10 {
+    grid-column: span 10;
+  }
+  .col-md-11 {
+    grid-column: span 11;
+  }
+  .col-md-12 {
+    grid-column: span 12;
+  }
+}
+
+/* ================= 4. LARGE DESKTOP (1024px and up) ================= */
+@media (min-width: 1024px) {
+  /* Display Toggles */
+  .d-lg-none {
+    display: none !important;
+  }
+  .d-lg-block {
+    display: block !important;
+  }
+  .d-lg-flex {
+    display: flex !important;
+  }
+
+  /* Responsive Grid Columns */
+  .col-lg-1 {
+    grid-column: span 1;
+  }
+  .col-lg-2 {
+    grid-column: span 2;
+  }
+  .col-lg-3 {
+    grid-column: span 3;
+  }
+  .col-lg-4 {
+    grid-column: span 4;
+  }
+  .col-lg-5 {
+    grid-column: span 5;
+  }
+  .col-lg-6 {
+    grid-column: span 6;
+  }
+  .col-lg-7 {
+    grid-column: span 7;
+  }
+  .col-lg-8 {
+    grid-column: span 8;
+  }
+  .col-lg-9 {
+    grid-column: span 9;
+  }
+  .col-lg-10 {
+    grid-column: span 10;
+  }
+  .col-lg-11 {
+    grid-column: span 11;
+  }
+  .col-lg-12 {
+    grid-column: span 12;
+  }
+}

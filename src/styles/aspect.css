@@ -1,0 +1,23 @@
+/* =========================================
+   ASPECT RATIO UTILITIES
+   ========================================= */
+
+/* 1:1 - Perfect for Grids, Avatars, and Explore Pages */
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+/* 16:9 - Perfect for YouTube embeds or wide videos */
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+/* 4:5 - The standard Instagram portrait post ratio */
+.aspect-portrait {
+  aspect-ratio: 4 / 5;
+}
+
+/* 3:4 - Classic photo ratio */
+.aspect-photo {
+  aspect-ratio: 3 / 4;
+}

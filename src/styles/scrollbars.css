@@ -1,0 +1,33 @@
+/* =========================================
+   CUSTOM SCROLLBARS (Webkit)
+   ========================================= */
+
+/* The entire scrollbar width */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+/* The track (background) of the scrollbar */
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+  border-left: var(--border-sm);
+}
+
+/* The draggable handle */
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border: var(--border-sm);
+  border-radius: 0px; /* Keeping it blocky and brutalist */
+}
+
+/* Hover state for the handle */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-primary-hover);
+}
+
+/* Ensure horizontal scrollbars also have a top border */
+::-webkit-scrollbar-track:horizontal {
+  border-left: none;
+  border-top: var(--border-sm);
+}

@@ -1,0 +1,54 @@
+/* =========================================
+   TYPOGRAPHY UTILITIES
+   ========================================= */
+
+/* ================= FONT WEIGHTS ================= */
+/* Neubrutalism lives in the 700-900 range */
+.fw-normal { font-weight: 400; }
+.fw-medium { font-weight: 500; }
+.fw-semibold { font-weight: 600; }
+.fw-bold { font-weight: 700; }
+.fw-extrabold { font-weight: 800; }
+.fw-black { font-weight: 900; } /* Use this for massive headers */
+
+/* ================= FONT SIZES ================= */
+/* Standard rem scale (1rem = 16px) */
+.text-xs { font-size: 0.75rem; }     /* 12px */
+.text-sm { font-size: 0.875rem; }    /* 14px */
+.text-base { font-size: 1rem; }      /* 16px */
+.text-lg { font-size: 1.125rem; }    /* 18px */
+.text-xl { font-size: 1.25rem; }     /* 20px */
+.text-2xl { font-size: 1.5rem; }     /* 24px */
+.text-3xl { font-size: 1.875rem; }   /* 30px */
+.text-4xl { font-size: 2.25rem; }    /* 36px */
+.text-5xl { font-size: 3rem; }       /* 48px - Huge Hero Text */
+
+/* ================= TEXT ALIGNMENT ================= */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* ================= TEXT TRANSFORM ================= */
+/* Uppercase is very common in Brutalist buttons and tags */
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+
+/* ================= LETTER SPACING (TRACKING) ================= */
+/* Tighter tracking makes bold fonts look punchier and block-like */
+.tracking-tight { letter-spacing: -0.05em; } 
+.tracking-normal { letter-spacing: 0; }
+.tracking-wide { letter-spacing: 0.05em; }
+
+/* ================= LINE HEIGHT (LEADING) ================= */
+.leading-none { line-height: 1; }       /* Great for single-line headers */
+.leading-tight { line-height: 1.25; }   /* Good for multi-line headers */
+.leading-normal { line-height: 1.5; }   /* Best for paragraph reading */
+
+/* ================= TRUNCATION ================= */
+/* Essential for social apps (e.g., cutting off long usernames or post previews) */
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

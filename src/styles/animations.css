@@ -1,0 +1,52 @@
+/* =========================================
+   ANIMATION UTILITIES
+   ========================================= */
+
+/* 1. Skeleton Loading (Pulsing background for unloaded data) */
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  background-color: #d1d5db; /* Grey placeholder */
+}
+
+/* Dark mode override for skeletons */
+[data-theme="dark"] .animate-pulse {
+  background-color: #374151;
+}
+
+/* 2. Slide Up (For bottom-sheet menus like Comments or Share) */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* 3. Fade In (For modals and toast notifications) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s ease-in forwards;
+}

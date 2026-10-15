@@ -1,0 +1,39 @@
+/* =========================================
+   COLOR UTILITIES (Backgrounds)
+   ========================================= */
+.bg-main { background-color: var(--color-bg); }
+.bg-surface { background-color: var(--color-surface); }
+.bg-ink { background-color: var(--color-ink); } /* Good for inverted black boxes */
+
+/* Brand & Pop Color Backgrounds */
+.bg-primary { background-color: var(--color-primary); }
+.bg-primary-hover { background-color: var(--color-primary-hover); }
+.bg-pink { background-color: var(--color-pink); }
+.bg-blue { background-color: var(--color-blue); }
+.bg-orange { background-color: var(--color-orange); }
+.bg-yellow { background-color: var(--color-yellow); }
+.bg-mint { background-color: var(--color-mint); }
+.bg-lavender { background-color: var(--color-lavender); }
+
+/* =========================================
+   COLOR UTILITIES (Text)
+   ========================================= */
+.text-main { color: var(--color-ink); } /* Uses --color-ink from index.css */
+.text-inverted { color: var(--color-bg); } /* Text color for dark backgrounds */
+
+/* Pop Color Text */
+.text-primary { color: var(--color-primary); }
+.text-pink { color: var(--color-pink); }
+.text-blue { color: var(--color-blue); }
+.text-orange { color: var(--color-orange); }
+.text-lavender { color: var(--color-lavender); }
+
+/* =========================================
+   COLOR UTILITIES (Borders)
+   ========================================= */
+.border-main { border-color: var(--color-border); }
+
+/* Pop Color Borders (optional, but useful) */
+.border-primary { border-color: var(--color-primary); }
+.border-pink { border-color: var(--color-pink); }
+.border-blue { border-color: var(--color-blue); }

@@ -1,0 +1,51 @@
+/* =========================================
+   BORDERS, RADIUS & SHADOW UTILITIES
+   ========================================= */
+
+/* ================= BORDER WIDTH ================= */
+/* Base border styles */
+.border-0 { border: none; }
+.border-sm { border: var(--border-sm); } /* 2px solid */
+.border-md { border: var(--border-md); } /* 4px solid (Standard Neubrutalist) */
+.border-lg { border: var(--border-lg); } /* 8px solid (Extra Chunky) */
+
+/* Specific sides (Defaulting to the medium 4px border for utility) */
+.border-t { border-top: var(--border-md); }
+.border-b { border-bottom: var(--border-md); }
+.border-l { border-left: var(--border-md); }
+.border-r { border-right: var(--border-md); }
+
+/* ================= BORDER RADIUS (4px Scale) ================= */
+.rounded-0 { border-radius: 0px; }            /* Sharp brutalist corners */
+.rounded-1 { border-radius: 4px; }
+.rounded-2 { border-radius: 8px; }            /* Standard buttons */
+.rounded-3 { border-radius: 12px; }
+.rounded-4 { border-radius: 16px; }           /* Standard cards */
+.rounded-5 { border-radius: 20px; }
+.rounded-6 { border-radius: 24px; }
+.rounded-7 { border-radius: 32px; }
+
+/* Special Radii */
+.rounded-full { border-radius: 9999px; }      /* Pill shape for tags/buttons */
+.rounded-circle { border-radius: 50%; }       /* Perfect circle for avatars */
+
+/* ================= SOLID DROP SHADOWS ================= */
+/* These use the variables from your index.css to instantly flip in Dark Mode */
+.shadow-none { box-shadow: none; }
+.shadow-sm { box-shadow: var(--shadow-sm); }
+.shadow-md { box-shadow: var(--shadow-md); }
+.shadow-lg { box-shadow: var(--shadow-lg); }
+
+/* Active state shadow (Use this combined with active:transform in your CSS, or via React state) */
+.shadow-active { box-shadow: var(--shadow-active); }
+
+/* ================= NEUBRUTALIST INTERACTION ================= */
+/* A helper class to instantly make any button or card clickable with the brutalist press effect */
+.brutal-click {
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.brutal-click:active {
+  transform: translate(4px, 4px);
+  box-shadow: var(--shadow-active) !important;
+}

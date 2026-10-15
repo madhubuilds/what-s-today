@@ -1,0 +1,64 @@
+/* =========================================
+   POSITION UTILITIES
+   ========================================= */
+
+/* Positioning Types */
+.pos-static { position: static; }
+.pos-relative { position: relative; }
+.pos-absolute { position: absolute; }
+.pos-fixed { position: fixed; }
+.pos-sticky { position: sticky; }
+
+/* =========================================
+   PLACEMENT (Top, Right, Bottom, Left)
+   ========================================= */
+/* Anchoring to edges */
+.top-0 { top: 0; }
+.right-0 { right: 0; }
+.bottom-0 { bottom: 0; }
+.left-0 { left: 0; }
+
+/* Full coverage (useful for overlays/modals) */
+.inset-0 { 
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0; 
+}
+
+/* 50% positioning (useful for centering) */
+.top-50 { top: 50%; }
+.right-50 { right: 50%; }
+.bottom-50 { bottom: 50%; }
+.left-50 { left: 50%; }
+
+/* 100% positioning (useful for pushing dropdowns below elements) */
+.top-100 { top: 100%; }
+.bottom-100 { bottom: 100%; }
+.left-100 { left: 100%; }
+.right-100 { right: 100%; }
+
+/* =========================================
+   TRANSLATION (For perfect absolute centering)
+   ========================================= */
+/* Use these in combination with top-50 / left-50 */
+.translate-middle { transform: translate(-50%, -50%); }
+.translate-middle-x { transform: translateX(-50%); }
+.translate-middle-y { transform: translateY(-50%); }
+
+/* =========================================
+   Z-INDEX (Layering Scale)
+   ========================================= */
+/* Negative for shadows or decorative background elements */
+.z-negative { z-index: -1; }
+
+/* Base elements */
+.z-0 { z-index: 0; }
+.z-10 { z-index: 10; }
+.z-20 { z-index: 20; }
+.z-30 { z-index: 30; }
+.z-40 { z-index: 40; }
+
+/* UI Overlays */
+.z-50 { z-index: 50; }     /* Use for sticky Top Nav / Bottom Nav */
+.z-max { z-index: 9999; }  /* Use for Modals / Toasts / Fullscreen Loaders */

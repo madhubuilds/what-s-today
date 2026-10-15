@@ -1,0 +1,94 @@
+/* =========================================
+   1. GLOBAL VARIABLES (LIGHT MODE DEFAULT)
+   ========================================= */
+:root,
+[data-theme="light"] {
+  color-scheme: light;
+
+  /* Core Neutrals */
+  --color-bg: #fcfbf7; /* Slightly warm off-white for doodle background */
+  --color-surface: #ffffff;
+  --color-ink: #000000; /* Pure black for maximum contrast */
+  --color-border: #000000;
+
+  /* Brand & Pop Colors (Extracted from UI Mockups) */
+  --color-primary: #ccff00; /* Signature Neon Yellow/Green */
+  --color-primary-hover: #b3e600;
+
+  --color-blue: #2bd2ff;    /* Bright Cyan (Chat bubbles, Map Pins) */
+  --color-blue-hover: #00bfff;
+
+  --color-pink: #ff4d9e;    /* Hot Pink (Likes, Profile Stats) */
+  --color-pink-hover: #ff1a80;
+
+  --color-orange: #ff5c00;  /* Bright Orange (Create Post, Tags) */
+  --color-orange-hover: #e65300;
+
+  --color-purple: #c892ff;  /* Lavender/Purple (Alerts, Tags) */
+  --color-purple-hover: #b366ff;
+
+  --color-yellow: #ffde59;  /* Soft Bright Yellow (Comments, Buttons) */
+  --color-yellow-hover: #f2cb27;
+
+  --color-mint: #4ade80;    /* Bright Green (Online status, Nature) */
+  --color-mint-hover: #22c55e;
+
+  /* Neubrutalism Borders */
+  --border-sm: 2px solid var(--color-border);
+  --border-md: 4px solid var(--color-border); /* Standard */
+  --border-lg: 8px solid var(--color-border); /* Extra chunky */
+
+  /* Neubrutalism Shadows */
+  --shadow-sm: 2px 2px 0px 0px var(--color-ink);
+  --shadow-md: 4px 4px 0px 0px var(--color-ink);
+  --shadow-lg: 8px 8px 0px 0px var(--color-ink); /* For floating menus */
+  --shadow-active: 0px 0px 0px 0px var(--color-ink);
+}
+
+/* =========================================
+   2. DARK MODE OVERRIDES
+   ========================================= */
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* Swap backgrounds and ink/text colors */
+  --color-bg: #121212;
+  --color-surface: #1e1e1e;
+  --color-ink: #ffffff;
+  --color-border: #ffffff;
+
+  /* Shadows must also flip to light so they are visible on black */
+  --shadow-sm: 2px 2px 0px 0px var(--color-border);
+  --shadow-md: 4px 4px 0px 0px var(--color-border);
+  --shadow-lg: 8px 8px 0px 0px var(--color-border);
+  --shadow-active: 0px 0px 0px 0px var(--color-border);
+
+  /* Pop colors stay exactly the same to keep the vibrant brutalist contrast! */
+}
+
+/* =========================================
+   3. BASE RESETS
+   ========================================= */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  /* Using Space Grotesk for that trendy brutalist look, falling back to sans-serif */
+  font-family: 'Space Grotesk', system-ui, Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  
+  /* Smooth transition when the user toggles dark mode */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Make images responsive by default */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}

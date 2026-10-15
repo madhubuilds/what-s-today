@@ -1,0 +1,76 @@
+/* =========================================
+   FORM UTILITIES
+   ========================================= */
+
+/* Base Input & Textarea */
+.form-control {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-ink);
+  background-color: var(--color-surface);
+  border: var(--border-md);
+  border-radius: 8px;
+  outline: none;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* Placeholder styling */
+.form-control::placeholder {
+  color: #888888;
+  font-weight: 500;
+}
+
+/* Aggressive Focus State (Pink drop shadow) */
+.form-control:focus {
+  box-shadow: 4px 4px 0px 0px var(--color-pink);
+  transform: translate(-2px, -2px);
+}
+
+/* Custom Checkbox / Radio */
+.form-check {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border: var(--border-md);
+  background-color: var(--color-surface);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-check[type="checkbox"] {
+  border-radius: 4px;
+}
+
+.form-check[type="radio"] {
+  border-radius: 50%;
+}
+
+.form-check:checked {
+  background-color: var(--color-primary);
+}
+
+/* Add a bold checkmark/dot when checked */
+.form-check:checked::after {
+  content: "";
+  display: block;
+  background-color: var(--color-ink);
+}
+
+.form-check[type="checkbox"]:checked::after {
+  width: 12px;
+  height: 12px;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.form-check[type="radio"]:checked::after {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}

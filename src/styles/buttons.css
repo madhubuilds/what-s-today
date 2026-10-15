@@ -1,0 +1,88 @@
+/* =========================================
+   BUTTON COMPONENT (buttons.css)
+   ========================================= */
+
+/* 1. Base Button Structure */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: inherit;
+  font-weight: 800; /* Extra bold */
+  text-transform: uppercase;
+  letter-spacing: -0.05em; /* Tight tracking */
+  border-radius: 8px; 
+  border: var(--border-sm); /* Standard thick border */
+  box-shadow: var(--shadow-md); /* Solid drop shadow */
+  cursor: pointer;
+  color: var(--color-ink);
+  background-color: var(--color-surface); /* Default to white/surface */
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.2s ease;
+}
+
+/* The universal Neubrutalist click effect */
+.btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: var(--shadow-active);
+}
+
+/* =========================================
+   2. SIZES
+   ========================================= */
+.btn-sm {
+  padding: var(--space-1) var(--space-3);
+  font-size: 0.875rem; /* 14px */
+}
+
+.btn-md {
+  padding: var(--space-2) var(--space-4);
+  font-size: 1rem; /* 16px */
+}
+
+.btn-lg {
+  padding: var(--space-3) var(--space-6);
+  font-size: 1.25rem; /* 20px */
+}
+
+/* For perfectly square icon buttons (like your FAB or share buttons) */
+.btn-icon {
+  padding: var(--space-2);
+  aspect-ratio: 1 / 1;
+}
+
+/* =========================================
+   3. COLOR VARIANTS
+   ========================================= */
+.btn-primary { background-color: var(--color-primary); }
+.btn-primary:hover { background-color: var(--color-primary-hover); }
+
+.btn-pink { background-color: var(--color-pink); }
+.btn-lavender { background-color: var(--color-lavender); }
+.btn-blue { background-color: var(--color-blue); }
+
+/* Inverted dark button */
+.btn-dark {
+  background-color: var(--color-ink);
+  color: var(--color-bg);
+}
+
+/* =========================================
+   4. OUTLINE & GHOST (No border/shadow)
+   ========================================= */
+/* Outline keeps the border but drops the background */
+.btn-outline {
+  background-color: transparent;
+}
+
+/* Ghost drops the border and shadow entirely (great for small action icons like hearts/comments) */
+.btn-ghost {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.btn-ghost:active {
+  transform: translateY(2px); /* Subtler click effect */
+  box-shadow: none;
+}
