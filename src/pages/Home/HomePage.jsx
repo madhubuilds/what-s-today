@@ -3,13 +3,14 @@ import { Heart, MapPin, MapPinned, MessageCircle, Send } from "lucide-react";
 export default function HomePage() {
   return (
     <div
-      className="max-w-md mx-auto min-h-screen bg-bg pos-relative px-2"
+      className="max-w-md mx-auto min-h-screen bg-bg pos-relative px-3"
       style={{ paddingBottom: "100px" }}
     >
       <header>
         <div className="d-flex justify-between pt-1">
           <h1 className="text-3xl text-md-4xl fw-black uppercase">
-            what's today?
+            what's 
+            today?
           </h1>
           <div className="d-flex align-center gap-1 bg-purple px-3 rounded-2 border-sm">
             <MapPinned />
@@ -43,7 +44,7 @@ export default function HomePage() {
           <img
             src="https://images.unsplash.com/photo-1627020730793-2ccb5cd55e99?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
             alt=""
-            className="aspect-square object-cover border-md rounded-3"
+            className="aspect-square object-cover border-md rounded-3 w-100"
           />
         </div>
         <div>
@@ -90,7 +91,7 @@ export default function HomePage() {
           <img
             src="https://images.unsplash.com/photo-1772615071673-d7805338c087?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
             alt=""
-            className="aspect-square object-cover border-md rounded-3"
+            className="aspect-square object-cover border-md rounded-3 w-100"
           />
         </div>
         <div>
