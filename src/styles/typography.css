@@ -11,7 +11,7 @@
 .fw-extrabold { font-weight: 800; }
 .fw-black { font-weight: 900; } /* Use this for massive headers */
 
-/* ================= FONT SIZES ================= */
+/* ================= FONT SIZES (Mobile-First Default) ================= */
 /* Standard rem scale (1rem = 16px) */
 .text-xs { font-size: 0.75rem; }     /* 12px */
 .text-sm { font-size: 0.875rem; }    /* 14px */
@@ -28,14 +28,46 @@
 .text-center { text-align: center; }
 .text-right { text-align: right; }
 
+/* ================= RESPONSIVE TYPOGRAPHY (Medium Devices >= 768px) ================= */
+@media (min-width: 768px) {
+  .text-md-xs { font-size: 0.75rem !important; }
+  .text-md-sm { font-size: 0.875rem !important; }
+  .text-md-base { font-size: 1rem !important; }
+  .text-md-lg { font-size: 1.125rem !important; }
+  .text-md-xl { font-size: 1.25rem !important; }
+  .text-md-2xl { font-size: 1.5rem !important; }
+  .text-md-3xl { font-size: 1.875rem !important; }
+  .text-md-4xl { font-size: 2.25rem !important; }
+  .text-md-5xl { font-size: 3rem !important; }
+
+  .text-md-left { text-align: left !important; }
+  .text-md-center { text-align: center !important; }
+  .text-md-right { text-align: right !important; }
+}
+
+/* ================= RESPONSIVE TYPOGRAPHY (Large Devices >= 1024px) ================= */
+@media (min-width: 1024px) {
+  .text-lg-xs { font-size: 0.75rem !important; }
+  .text-lg-sm { font-size: 0.875rem !important; }
+  .text-lg-base { font-size: 1rem !important; }
+  .text-lg-lg { font-size: 1.125rem !important; }
+  .text-lg-xl { font-size: 1.25rem !important; }
+  .text-lg-2xl { font-size: 1.5rem !important; }
+  .text-lg-3xl { font-size: 1.875rem !important; }
+  .text-lg-4xl { font-size: 2.25rem !important; }
+  .text-lg-5xl { font-size: 3rem !important; }
+
+  .text-lg-left { text-align: left !important; }
+  .text-lg-center { text-align: center !important; }
+  .text-lg-right { text-align: right !important; }
+}
+
 /* ================= TEXT TRANSFORM ================= */
-/* Uppercase is very common in Brutalist buttons and tags */
 .uppercase { text-transform: uppercase; }
 .lowercase { text-transform: lowercase; }
 .capitalize { text-transform: capitalize; }
 
 /* ================= LETTER SPACING (TRACKING) ================= */
-/* Tighter tracking makes bold fonts look punchier and block-like */
 .tracking-tight { letter-spacing: -0.05em; } 
 .tracking-normal { letter-spacing: 0; }
 .tracking-wide { letter-spacing: 0.05em; }
@@ -46,7 +78,6 @@
 .leading-normal { line-height: 1.5; }   /* Best for paragraph reading */
 
 /* ================= TRUNCATION ================= */
-/* Essential for social apps (e.g., cutting off long usernames or post previews) */
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;

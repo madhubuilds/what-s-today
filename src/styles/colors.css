@@ -8,12 +8,12 @@
 /* Brand & Pop Color Backgrounds */
 .bg-primary { background-color: var(--color-primary); }
 .bg-primary-hover { background-color: var(--color-primary-hover); }
-.bg-pink { background-color: var(--color-pink); }
 .bg-blue { background-color: var(--color-blue); }
+.bg-pink { background-color: var(--color-pink); }
 .bg-orange { background-color: var(--color-orange); }
+.bg-purple { background-color: var(--color-purple); }
 .bg-yellow { background-color: var(--color-yellow); }
 .bg-mint { background-color: var(--color-mint); }
-.bg-lavender { background-color: var(--color-lavender); }
 
 /* =========================================
    COLOR UTILITIES (Text)
@@ -23,17 +23,23 @@
 
 /* Pop Color Text */
 .text-primary { color: var(--color-primary); }
-.text-pink { color: var(--color-pink); }
 .text-blue { color: var(--color-blue); }
+.text-pink { color: var(--color-pink); }
 .text-orange { color: var(--color-orange); }
-.text-lavender { color: var(--color-lavender); }
+.text-purple { color: var(--color-purple); }
+.text-yellow { color: var(--color-yellow); }
+.text-mint { color: var(--color-mint); }
 
 /* =========================================
    COLOR UTILITIES (Borders)
    ========================================= */
 .border-main { border-color: var(--color-border); }
 
-/* Pop Color Borders (optional, but useful) */
+/* Pop Color Borders */
 .border-primary { border-color: var(--color-primary); }
-.border-pink { border-color: var(--color-pink); }
 .border-blue { border-color: var(--color-blue); }
+.border-pink { border-color: var(--color-pink); }
+.border-orange { border-color: var(--color-orange); }
+.border-purple { border-color: var(--color-purple); }
+.border-yellow { border-color: var(--color-yellow); }
+.border-mint { border-color: var(--color-mint); }

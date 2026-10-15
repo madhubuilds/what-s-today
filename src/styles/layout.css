@@ -27,6 +27,7 @@
 .max-w-sm { max-width: 480px; }  /* Mobile width lock */
 .max-w-md { max-width: 768px; }  /* Tablet width lock */
 .max-w-lg { max-width: 1024px; } /* Desktop width lock */
+.max-w-xl { max-width: 1440px; } /* Desktop width lock */
 
 /* ================= MIN WIDTH & HEIGHT ================= */
 .min-w-100 { min-width: 100%; }

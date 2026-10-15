@@ -2,6 +2,10 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import TopNav from "./Components/UI/TopNav/TopNav";
 import BottomNav from "./Components/UI/BottomNav/BottomNav";
+import HomePage from "./pages/Home/HomePage";
+import SearchPage from "./pages/Search/SearchPage";
+import AddPostPage from "./pages/AddPost/AddPostPage";
+import NotificationPage from "./pages/Notification/NotificationPage";
 import ProfilePage from "./pages/Profile/ProfilePage";
 
 function App() {
@@ -12,15 +16,13 @@ function App() {
 
       <Routes>
         {/* Your Home/Feed Route */}
-        <Route
-          path="/"
-          element={
-            <div className="p-4">
-              <h1 className="text-2xl fw-black">Feed goes here</h1>
-            </div>
-          }
-        />
-
+        <Route path="/" element={<HomePage />} />
+        {/* Search */}
+        <Route path="/search" element={<SearchPage />} />
+        {/* Add Post */}
+        <Route path="/add-post" element={<AddPostPage />} />
+        {/* Notifications */}
+        <Route path="/notifications" element={<NotificationPage />} />
         {/* Profile Route */}
         <Route path="/profile" element={<ProfilePage />} />
       </Routes>
