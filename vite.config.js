@@ -3,6 +3,6 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base:"/What-s-Today-/",
+  base:"/what-s-today/",
   plugins: [react()],
 })
